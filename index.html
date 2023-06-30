@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Agency Landing Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="page">
+        <!-- Хедер хедер хедер-->
+            <header class="main-header page__main-header background-color-black">
+                <nav class="main-header-navigation center">
+                    <a class="logo" href="#">
+                        <img src="img/logo.svg" class="logo__img" alt="logo">
+                        <p class="logo__company-name">ABC</p>
+                    </a>
+                        <ul class="site-navigation">
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Home</a></li>
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Consulting Service</a></li>
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Industries Seryed</a></li>
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Our Proces</a></li>
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Clicent & Results</a></li>
+                            <li class="site-navigation__item"><a class="link link_hover-active" href="#">Careers</a></li>
+                            <li class="site-navigation__item site-navigation__item_burger"><a href="#">☰</a></li>
+                        </ul>
+                    <a class="btn btn_size_m main-header__btn" href="#"><div class="btn__text">Contact Us</div></a>
+                </nav>
+            </header>
+            <!-- Интро -->
+            <main>
+                <section class="intro-wrapper page__intro background-color-black">
+                    <div class="intro center">
+                        <div class="intro__content tablet-aligning">
+                            <div class="top-title intro__top-title">Supply Chain Consulting </div> 
+                            <h1 class="title title_main-title intro__title">From strategy to delivery, on time every time</h1>
+                            <div class="page-text intro__page-text text-container-tablet">ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification,Consulting is an </div>
+                            <a class="btn" href="#">About Us</a>
+                        </div>
+                            <img src="img/ABC-company.jpg" class="intro__img border-radius" alt="ABC company">
+                    </div>
+                </section>
+            <!-- Услуги -->
+                <section class="services page__services">
+                    <div class="services__content tablet-aligning center">
+                        <h2 class="title title_title_size_l services__title">ABC supply chain diversification & acceleration</h2>
+                        <div class="page-text services__page-text text-container-tablet mobile-aligning">
+                            <p>ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification, </p>
+                        </div>
+                    </div>
+                    <ul class="services-list services__services-list center">
+                        <li class="services-list__item">
+                            <h3 class="services-list__title title">Marketing <br>Sales &</h3> 
+                            <div class="services-list__wrapper">
+                                <img src="img/marketing.jpg" class="services-list__img" alt="Marketing and Sales">
+                            </div>
+                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                        </li>
+                        <li class="services-list__item">
+                            <h3 class="services-list__title title">Skill-Based<br>Training</h3>
+                            <div class="services-list__wrapper">
+                                <img src="img/trained.jpg" class="services-list__img" alt="Skill-Based Training">
+                            </div>
+                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                        </li>
+                        <li class="services-list__item">
+                            <h3 class="services-list__title title">Infrastructure<br>Sourcing IT</h3>
+                            <div class="services-list__wrapper">
+                                <img src="img/infrastructure.jpg" class="services-list__img" alt="Infrastructure Sourcing IT">
+                            </div>
+                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                        </li>
+                        <li class="services-list__item">
+                            <h3 class="services-list__title title">Communication &<br>Media Services</h3>
+                            <div class="services-list__wrapper">
+                                <img src="img/communication.jpg" class="services-list__img" alt="Communication & Media Services">
+                            </div>
+                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                        </li>
+                    </ul>
+                    <div class="slider">
+                        <span class="slider__pagination slider__pagination_active"></span>
+                        <span class="slider__pagination"></span>
+                        <span class="slider__pagination"></span>
+                        <span class="slider__pagination"></span>
+                    </div>
+                </section>
+            <!-- Статьи -->
+                    <article class="blog-post page__blog-post center flex-tablet">
+                            <picture class="blog-post__img-container">
+                                <source media="(min-width: 990px), (max-width: 575px)" srcset="img/article-img-1.jpg">
+                                <source media="(min-width: 574px)" srcset="img/article-img-1-horizontal.jpg">
+                                <img src="img/article-img-1.jpg" class="blog-post__img border-radius" alt="TOP 6 focus area">
+                            </picture>
+                        <div class="blog-post__content tablet-aligning">
+                            <div class="top-title blog-post__top-title">Redesigning your supply chain</div>
+                            <h2 class="title title_title_size_s blog-post__title">Top 6 focus areas for success</h2>
+                            <div class="page-text blog-post__page-text text-container-tablet mobile-aligning">
+                            <ol class="blog-post__list">
+                                <li>Tooling considerations (transfer tooling vs. New tooling vs.)</li>
+                                <li>Logistics network optimization</li>
+                                <li>Cost to onboard and approve new suppliers</li>
+                                <li>Undocumented specifications or supplier owned drawings</li>
+                                <li>New product introduction and rapid prototyping</li>
+                                <li>Manufacturing location (greenfield, brownfield, jv, maquiladora, vertical integration, etc.)</li>
+                            </ol>
+                            </div>
+                            <a href="src" class="btn">Reading</a>
+                        </div>
+                    </article>
+                    <article class="blog-post page__blog-post blog-post_row-reverse blog-post_gap center flex-tablet">
+                        <picture class="blog-post__img-container">
+                            <source media="(min-width: 990px), (max-width: 575px)" srcset="img/article-img-2.jpg">
+                            <source media="(min-width: 574px)" srcset="img/article-img-2-horizontal.jpg">
+                            <img src="img/article-img-2.jpg" class="blog-post__img border-radius" alt="Manufacturing migration">
+                        </picture>
+                            <div class="blog-post__content tablet-aligning">
+                                <div class="top-title blog-post__top-title">The great</div>
+                                <h2 class="title title_title_size_s blog-post__title">Manufacturing migration</h2>
+                                <div class="page-text blog-post__page-text text-container-tablet mobile-aligning">
+                                    <p>Many Global OEM and multinational consumer product corporations are embarking on a journey of transformation relative to establishing rooftops and manufacturing</p>
+                                </div>
+                                <a href="src" class="btn">Reading</a>
+                            </div>
+                    </article>
+            <!-- Преимущества -->
+                <section class="advantages-wrapper page__advantages background-color-grey">
+                    <div class="advantages center">
+                        <div class="advantages__content tablet-aligning">
+                            <div class="top-title advantages__top-title">At our core</div>
+                            <h2 class="title title_title_size_l advantages__title">Execution quality that drives sustain able results</h2>
+                            <div class="page-text advantages__page-text text-container-tablet mobile-aligning">
+                                <p>Many Global OEM and multinational consumer product corporations are embarking on a journey of transformationMany Global OEM and</p>
+                            </div>
+                        </div>
+                        <ul class="advantages-list">
+                            <li class="advantages-list__item">
+                                <h3 class="advantages-list__title title">98 Years</h3>
+                                <p class="advantages-list__descr">of combined partner experienceof combined partner experience</p>
+                            </li>
+                            <li class="advantages-list__item">
+                                <h3 class="advantages-list__title title">37 Years</h3>
+                                <p class="advantages-list__descr">Experience as a supply Chain firmExperience as a supply Chain firm</p>
+                            </li>
+                            <li class="advantages-list__item">
+                                <h3 class="advantages-list__title title">$8 Billions</h3>
+                                <p class="advantages-list__descr">Saved for our clients globallySaved for our clients globally</p>
+                            </li>
+                            <li class="advantages-list__item">
+                                <h3 class="advantages-list__title title">18-22%</h3>
+                                <p class="advantages-list__descr">average client savings over the last 25 yearsaverage client </p>
+                            </li>
+                            <li class="advantages-list__item">
+                                <h3 class="advantages-list__title title">50-186%</h3>
+                                <p class="advantages-list__descr">typical client EBITDA impact fstrategictypical client EBITDA impact</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            <!-- Методология -->
+                <section class="commercial page__commercial center flex-tablet">
+                        <picture class="commercial__img-container">
+                                <source media="(min-width: 990px), (max-width: 575px)" srcset="img/methodology.jpg">
+                                <source media="(min-width: 574px)" srcset="img/methodology-horizontal.jpg">
+                                <img src="img/methodology.jpg" class="commercial__img border-radius" alt="Methodology">
+                        </picture>
+                        <div class="commercial__content tablet-aligning">
+                            <div class="top-title commercial__top-title">Methodology</div>
+                            <h2 class="title commercial__title title_title_size_s">We measure success through actual and sustainable finance</h2>
+                            <div class="page-text commercial__page-text text-container-tablet mobile-aligning">
+                                <p>Many Global OEM and multinational consumer product corporations are embarking on a journey of transformationMany Global OEM and multinational consumer product corporations are embarking on a journey of supply chain counslting.</p>
+                            </div>
+                            <a href="#" class="btn">Our 11 gate</a>
+                        </div>
+                </section>
+            <!-- Кейсы -->
+                <section class="cases page__cases center">
+                    <h2 class="title title_title_size_l cases__title tablet-aligning">Inside ABC supply chain consulting </h2>
+                    <ul class="cases-list cases__cases-list">
+                        <li class="cases-list__item">
+                                <img class="cases-list__img" src="img/Founder.jpg" alt="Founder ABC">
+                                <a href="#">
+                                    <h3 class="cases-list__title title">Founder Christopher Discusses The  ABC Approach</h3>
+                                </a>
+                                <div class="cases-list__descr">
+                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                </div>
+                        </li>
+                        <li class="cases-list__item">
+                                <img class="cases-list__img" src="img/education.jpg" alt="The link for sustainable succes">
+                                <a href="#">
+                                    <h3 class="cases-list__title title">The link for sustainable succes & results withhin supply chan</h3>
+                                </a>
+                                <div class="cases-list__descr">
+                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                </div>
+                        </li>
+                        <li class="cases-list__item">
+                                <img class="cases-list__img" src="img/working.jpg" alt="Brainshtorm">
+                                <a href="#">
+                                    <h3 class="cases-list__title title">How to Overcome Trade War, Covid-19, And Supply Risk?</h3>
+                                </a>
+                                <div class="cases-list__descr">
+                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                </div>
+                        </li>
+                    </ul>
+                    <div class="slider">
+                        <span class="slider__pagination slider__pagination_active"></span>
+                        <span class="slider__pagination"></span>
+                        <span class="slider__pagination"></span>
+                    </div>
+                </section>
+            <!-- call to action -->
+                <section class="cta page__cta center flex-tablet">
+                    <div class="cta__content tablet-aligning mobile-aligning">
+                        <div class="top-title cta__top-title">Let’s do this</div>
+                        <h2 class="title title_title_size_s cta__title">Together we give you best service</h2>
+                        <div class="page-text cta__page-text text-container-tablet">
+                            <p>Take the next step by learning more about Gibson Consulting’s capabilities and qualifications. To request information or arrange face-to-face introduction,</p>
+                            <p>Simply fill out the form below or give us a call at 312.291.4640.Take the next step by learning more.</p>
+                        </div>
+                        <a href="src" class="btn">Leran More</a>
+                    </div>
+                    <form class="webform cta__webform" action="#">
+                        <fieldset class="webform__container">
+                            <input class="webform__field" type="text" id="name" name="name" placeholder="Full Name">
+                            <input class="webform__field" type="text" id="mail" name="mail" placeholder="Email">
+                            <input class="webform__field" type="text" id="phone" name="phone" placeholder="Phone Number">
+                            <input class="webform__field webform__field_margin-bottom" type="text" id="subjet" name="subjet" placeholder="Subjet">
+                            <textarea class="webform__field webform__field_textarea" name="message" placeholder="Message"></textarea>
+                            <button class="btn webform__btn btn_size_s" type="submit">
+                                Submit
+                            </button>
+                            <div class="webform__text webform-text">
+                                <div class="webform-text__recaptcha">protected by reCAPTCHA</div>
+                                <div class="webform-text__privacy"><a class="webform-text__link" href="#">Privacy</a> - <a class="webform-text__link" href="#">Terms</a></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        <!-- Футер -->
+            <footer class="footer-wrapper page__footer-wrapper background-color-black">
+                <div class="footer-nav footer-wrapper__footer-nav center">
+                    <div class="main-footer footer-nav__main-footer">
+                        <div class="main-footer__content">
+                            <a class="logo main-footer__logo" href="#">
+                                <img src="img/logo.svg" class="logo__img logo__img_size_s" alt="logo">
+                                <p class="logo__company-name logo__company-name_size_s">ABC</p>
+                            </a>
+                            <p class="main-footer__text">
+                                According to recent figures, Bangladesh currently According to recent figures, Bangladesh currently
+                            </p>
+                            <ul class="social-list">
+                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-facebook" src="img/fb.svg" alt="facebook"></a></li>
+                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-twitter" src="img/tw.svg" alt="twitter"></a></li>
+                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-instagram" src="img/inst.svg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                        <ul class="menu main-footer__menu">
+                            <li class="menu__item">
+                                <div class="menu__item-wrapper">
+                                    <h2 class="menu__title">About Us</h2>
+                                    <div class="menu__plus">+</div>
+                                </div>
+                                <ul class="menu-links">
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Advanced Analytics</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Data Insights</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Data Exploration</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Auto Track</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <div class="menu__item-wrapper">
+                                    <h2 class="menu__title">Services</h2>
+                                    <div class="menu__plus">+</div>
+                                </div>
+                                <ul class="menu-links">
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Article & Blog</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Documentation</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Learn Gulaly</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Tutorials</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <div class="menu__item-wrapper">
+                                    <h2 class="menu__title">Industries Seerved</h2>
+                                    <div class="menu__plus">+</div>
+                                </div>
+                                <ul class="menu-links">
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Onlin batch</a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Offline batch </a></li>
+                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Private</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info footer-nav__footer-info">
+                        <div class="copyright footer-info__copyright">
+                            <img class="copyright__img" src="img/copyright.svg" alt="copyright">
+                            <p class="copyright__text">2022 S.M.All rights reserved</p>
+                        </div>
+                        <div class="footer-info__links">
+                            <a class="footer-info__link" href="#">Privacy Policy</a>
+                            <a class="footer-info__link" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
