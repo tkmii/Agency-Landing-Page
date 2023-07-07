@@ -144,7 +144,7 @@ p {
     height: 23px;
 }
 
-.site-navigation__item_burger {
+.burger-menu {
     display: none;
 }
 
@@ -840,14 +840,97 @@ p {
         justify-content: space-between;
     }
     
-    .site-navigation__item {
+    .main-header__btn {
         display: none;
     }
-    
-    .site-navigation__item_burger {
-        font-size: 40px;
+
+    .site-navigation {
+        display: none;
+    }
+
+    /*Выпадающее меню*/
+
+    .mobile-menu {
         display: block;
-        height: 52.8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2.25em 2.9em;
+    }
+
+    .open {
+        background-color: rgba(58, 59, 58, 1);
+        width: 70%;
+    }
+
+    .open .burger-menu {
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .open .site-navigation {
+        display: block;
+    }
+
+    .open .site-navigation__item {
+        font-size: 1.5rem;
+        padding-bottom: 2em;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .open .site-navigation__item:last-child {
+        padding-bottom: 30px;
+    }
+
+    .open .link_hover-active:hover::after, .link_hover-active:active::after {
+        content: ' ';
+        display: none;
+    }
+
+    /*.open .link_hover-active {
+        display: none;
+    }*/
+    
+    .burger-menu {
+        display: block;
+        border: none;
+        height: 30px;
+        background-color: inherit;
+        width: 30px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .burger-menu__element {
+        height: 3px;
+        width: 30px;
+        display: block;
+        background-color: white;
+        position: absolute;
+        transition: background-color .5s, display .3s, transform .5s;
+    }
+
+    .burger-menu__element:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .burger-menu__element:nth-child(3) {
+        transform: translateY(10px);
+    }
+
+    /* Крестик */
+
+    .open .burger-menu__element:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .open .burger-menu__element:nth-child(2) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .open .burger-menu__element:nth-child(3) {
+        display: none;
     }
     
     /* Интро */
@@ -1215,11 +1298,6 @@ p {
     /*Повторяющиеся блоки и элементы*/
     .btn {
         font-size: 12px;
-    }
-
-    /*Шапка*/
-    .site-navigation__item_burger {
-        font-size: 38px;
     }
 
     /*Интро*/
