@@ -1227,10 +1227,11 @@ p {
 
     .site-navigation {
         padding: 7vh 5vh;
+        height: inherit;
     }
 
     .site-navigation__item {
-        font-size: 3.5vh;
+        font-size: 3vh;
         padding-bottom: 10vh;
     }    
 
