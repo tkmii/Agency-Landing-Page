@@ -844,53 +844,54 @@ p {
         display: none;
     }
 
-    .site-navigation {
-        display: none;
-    }
-
     /*Выпадающее меню*/
 
     .mobile-menu {
-        display: block;
-        position: absolute;
+        right: -70%;
+        width: 70%;
+        transition: transform linear .5s, visibility linear .5s;
+        background-color: rgba(58, 59, 58, 1);
+        position: fixed;
         top: 0;
-        right: 0;
-        padding: 2.25em 2.9em;
     }
 
     .open {
-        background-color: rgba(58, 59, 58, 1);
-        width: 70%;
+        z-index: 10;
+        top: 0;
+        position: fixed;
+        visibility: visible;
+        transform: translateX(-100%);
     }
 
-    .open .burger-menu {
-        margin-left: auto;
-        cursor: pointer;
-    }
-
-    .open .site-navigation {
+    .site-navigation {
+        visibility: visible;
         display: block;
+        padding: 2.25em 2.9em;
     }
 
-    .open .site-navigation__item {
+    .site-navigation__item {
         font-size: 1.5rem;
         padding-bottom: 2em;
         height: auto;
-        cursor: pointer;
     }
 
-    .open .site-navigation__item:last-child {
+    .site-navigation__item:last-child {
         padding-bottom: 30px;
     }
 
-    .open .link_hover-active:hover::after, .link_hover-active:active::after {
+    .link {
+        cursor: pointer;
+    }
+
+    .link_hover-active:hover::after, .link_hover-active:active::after {
         content: ' ';
         display: none;
     }
 
-    /*.open .link_hover-active {
-        display: none;
-    }*/
+    .link_hover-active:hover, .link_hover-active:active {
+        content: ' ';
+        color: white;
+    }
     
     .burger-menu {
         display: block;
@@ -899,7 +900,10 @@ p {
         background-color: inherit;
         width: 30px;
         padding: 0;
+        z-index: 11;
+        position: fixed;
         cursor: pointer;
+        right: 5%;
     }
 
     .burger-menu__element {
@@ -915,22 +919,23 @@ p {
         transform: translateY(-10px);
     }
 
+
     .burger-menu__element:nth-child(3) {
         transform: translateY(10px);
     }
 
     /* Крестик */
 
-    .open .burger-menu__element:nth-child(1) {
+    .animation-btn .burger-menu__element:nth-child(1) {
         transform: translateY(0px) rotate(45deg);
     }
 
-    .open .burger-menu__element:nth-child(2) {
-        transform: translateY(0) rotate(-45deg);
+    .animation-btn .burger-menu__element:nth-child(2) {
+        visibility: hidden;
     }
 
-    .open .burger-menu__element:nth-child(3) {
-        display: none;
+    .animation-btn .burger-menu__element:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
     }
     
     /* Интро */
