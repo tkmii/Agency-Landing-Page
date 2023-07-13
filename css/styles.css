@@ -915,7 +915,7 @@ p {
         display: block;
         background-color: white;
         position: absolute;
-        transition: background-color .5s, display .3s, transform .5s;
+        transition: background-color .5s, visibility .2s, transform .5s;
     }
 
     .burger-menu__element:nth-child(1) {
