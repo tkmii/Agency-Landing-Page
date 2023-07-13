@@ -693,7 +693,7 @@ p {
     list-style: none;
 }
 
-.menu__plus {
+.menu-btn {
     display: none;
 }
 
@@ -1090,12 +1090,30 @@ p {
         max-width: 100%;
     }
 
-    .menu__plus {
-        display: inline;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.69rem;
-        color: #FFFFFF;
+    .menu-btn {
+        display: block;
+        border: none;
+        height: 30px;
+        background-color: inherit;
+        width: 30px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .menu-btn__element {
+        height: 3px;
+        width: 30px;
+        display: block;
+        background-color: white;
+        position: absolute;
+    }
+
+    .menu-btn__element:nth-child(1) {
+        transform: rotate(90deg);
+    }
+
+    .menu-btn-active .menu-btn__element:nth-child(1) {
+        visibility: hidden;
     }
 
     .menu__item-wrapper {
