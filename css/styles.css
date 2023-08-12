@@ -555,6 +555,10 @@ p {
     margin-bottom: 1em;
 }
 
+.error {
+    border: 1px solid red;
+}
+
 .webform__field:focus-visible, .webform__btn:focus-visible  {
     outline: none;
 }
