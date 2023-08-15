@@ -74,9 +74,9 @@ p {
     letter-spacing: 0.004em;   
 }
 
-.slider {
+/* .slider {
     display: none;
-}
+} */
 
 .title {
     color: #FFFFFF;
@@ -228,25 +228,52 @@ p {
 
 .services-list {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    
+    /* gap: 1.9em;*/
 }
 
-.services-list__item {
+.services-card {
+    position: relative;
+    max-height: 229px;
+    /*max-width: 270px;*/
+}
+
+.services-card__title {
+    font-size: 1.69rem;
+    line-height: 1.3;
+    position: absolute;
+    z-index: 2;
+    top: 28px;
+    left: 16px;
+}
+
+.services-card__btn-arrow {
+    position: absolute;
+    bottom: -0.7px;
+    right: -0.5px;
+}
+
+.services-card::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(41, 42, 41, 0.7);
+}
+
+.services-card__img {
+    width: inherit;
+}
+
+
+
+/*.services-list__card {
     max-width: 23.1%;
 }
 
 .services__services-list {
     height: 14.9vw;
-}
-
-.services-list__title {
-    font-size: 1.69rem;
-    line-height: 1.3;
-    position: relative;
-    top: 25px;
-    left: 16px;
-    z-index: 2;
 }
 
 .services-list__img {  
@@ -266,18 +293,17 @@ p {
     position: absolute;
     top: 0; left: 0;
     background-color: rgba(41, 42, 41, 0.7);
-}
+}*/
 
 .btn-arrow {
     display: block;
+    width: 60.8px;
+    height: 60.8px;
 }
 
 .services-list__btn-arrow {
     position: relative;
-    width: 60.8px;
-    height: 60.8px;
     float: right;
-    bottom: 131px;
 }
 
 .btn-arrow-img {
@@ -288,7 +314,7 @@ p {
 
 .btn-arrow-img:hover, .btn-arrow-img:active {
     background-color: rgba(164, 122, 38);
-}
+} 
 
 /* Статьи */ 
 .blog-post {
@@ -744,6 +770,7 @@ p {
     text-decoration: underline;
 }
 
+
 /* Медиа-запросы */
 
 /* Ноутбуки */
@@ -758,12 +785,17 @@ p {
         font-size: 13px;
     }
 
-    /*Услуги*/
+    /*.services-card, .services-card__img-wrapper::before, .services-card__img {
+        max-width: 230px;
+    }*/
+
+    /*Услуги
 
     .services-list__btn-arrow {
         bottom: 122px;
         height: 17.8vw;
     }
+    */
 
     /*Статьи*/
 
@@ -809,7 +841,7 @@ p {
 
     /*Слайдер*/
 
-    .slider {
+    /* .slider {
         display: flex;
         justify-content: center;
         gap: 7px;
@@ -834,7 +866,7 @@ p {
 
     .slider__pagination:hover, .slider__pagination:active {
         background-color: rgb(245, 205, 118);
-    }
+    } */
 
     /* Шапка */
     .page__main-header {
@@ -965,7 +997,7 @@ p {
         margin-bottom: 8em;
     }
     
-    .services__services-list {
+    /* .services__services-list {
         height: 22.8vw;
         margin-bottom: 3.875em;
     }
@@ -980,7 +1012,7 @@ p {
     
     .services-list__btn-arrow {
         bottom: 131px;
-    }
+    } */
 
 
     /*Статьи*/
@@ -1185,7 +1217,7 @@ p {
     }
 
     /*Услуги*/
-    .services__services-list {
+   /* .services__services-list {
         height: 28.7vw;
     }
     
@@ -1199,7 +1231,7 @@ p {
 
     .services-list__btn-arrow {
         bottom: 123px;
-    }
+    } */
 
     /*Преимущества*/
     .advantages-list__item {
@@ -1239,9 +1271,9 @@ p {
         font-size: 2rem;
     }
     
-    .slider__pagination:nth-child(3), .slider__pagination:nth-child(4) {
+    /*.slider__pagination:nth-child(3), .slider__pagination:nth-child(4) {
         display: block;
-    }
+    }*/
 
     /*Шапка*/
     .page__main-header {
@@ -1282,7 +1314,7 @@ p {
     }
     
     /*Услуги*/
-    .services-list {
+   /* .services-list {
         justify-content: center;
     }
 
@@ -1305,7 +1337,7 @@ p {
 
     .services__services-list {
         height: 42.1vw;
-    }
+    } */
 
     /*Статьи*/
     .blog-post__list {
@@ -1363,7 +1395,7 @@ p {
     }
 
     /*Услуги*/
-    .services__services-list {
+    /*.services__services-list {
         height: 50.1vw;
     }
     
@@ -1382,7 +1414,7 @@ p {
 
     .services-list__btn-arrow {
         bottom: 105px;
-    }
+    } */
 
     /*Преимущества*/
 
@@ -1418,3 +1450,6 @@ p {
 
 
 }
+
+
+

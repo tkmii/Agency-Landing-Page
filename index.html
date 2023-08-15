@@ -8,9 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     </head>
     <body class="page">
-        <!-- Хедер хедер хедер-->
+        <!-- Хедер -->
             <header class="main-header page__main-header background-color-black">
                 <nav class="main-header-navigation center">
                     <a class="logo" href="#">
@@ -52,7 +53,38 @@
                             <p>ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification, </p>
                         </div>
                     </div>
-                    <ul class="services-list services__services-list center">
+
+                    <div class="services-swiper center swiper swiper-wrapper" style="padding-left: 3.35em; padding-right: 2.9em;">
+                        <div class="services-list services-swiper__services-list swiper-wrapper">
+                            <div class="services-card swiper-slide">
+                                <h3 class="services-card__title title">Marketing <br>Sales &</h3> 
+                                    <img src="img/marketing.jpg" class="services-card__img" alt="Marketing and Sales">
+                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                            </div>
+
+                            <div class="services-card swiper-slide">
+                                <h3 class="services-card__title title">Skill-Based<br>Training</h3> 
+                                <img src="img/trained.jpg" class="services-card__img" alt="Skill-Based Training">
+                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                            </div>
+
+                            <div class="services-card swiper-slide">
+                                <h3 class="services-card__title title">Infrastructure<br>Sourcing IT</h3> 
+                                <img src="img/infrastructure.jpg" class="services-card__img" alt="Infrastructure Sourcing IT">
+                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                            </div>
+
+                            <div class="services-card swiper-slide" style="margin-right: 0;">
+                                <h3 class="services-card__title title">Communication &<br>Media Services</h3> 
+                                <img src="img/communication.jpg" class="services-card__img" alt="Communication & Media Services">
+                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                    </div>
+
+                    <!-- <ul class="services-list services__services-list center">
                         <li class="services-list__item">
                             <h3 class="services-list__title title">Marketing <br>Sales &</h3> 
                             <div class="services-list__wrapper">
@@ -87,7 +119,7 @@
                         <span class="slider__pagination"></span>
                         <span class="slider__pagination"></span>
                         <span class="slider__pagination"></span>
-                    </div>
+                    </div>-->
                 </section>
             <!-- Статьи -->
                     <article class="blog-post page__blog-post center flex-tablet">
@@ -315,5 +347,7 @@
         <script src="js/burger-menu.js"></script>
         <script src="js/menu-list.js"></script>
         <script src="js/send-form.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+        <script src="js/slider.js"></script>
     </body>
 </html>
