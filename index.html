@@ -3,43 +3,63 @@
     <head>
         <meta charset="utf-8">
         <title>Agency Landing Page</title>
+        <meta name="description" content="ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="icon" href="favicon.ico">
     </head>
     <body class="page">
-        <!-- Хедер -->
-            <header class="main-header page__main-header background-color-black">
+        <!-- Хедер-->
+            <header class="main-header page__main-header black">
                 <nav class="main-header-navigation center">
                     <a class="logo" href="#">
                         <img src="img/logo.svg" class="logo__img" alt="logo">
-                        <p class="logo__company-name">ABC</p>
                     </a>
-                    <button class="burger-menu"><span class="burger-menu__element"></span><span class="burger-menu__element"></span><span class="burger-menu__element"></span></button>
-                    <div class="mobile-menu">
-                            <ul class="site-navigation">
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Home</a></li>
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Consulting Service</a></li>
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Industries Seryed</a></li>
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Our Proces</a></li>
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Clicent & Results</a></li>
-                                <li class="site-navigation__item"><a class="link link_hover-active" href="#">Careers</a></li>
-                            </ul>
-                </div>
-                <a class="btn btn_size_m main-header__btn" href="#"><div class="btn__text">Contact Us</div></a>
+                    <button class="burger-menu">
+                        <span class="burger-menu__element"></span>
+                        <span class="burger-menu__element"></span>
+                        <span class="burger-menu__element"></span>
+                    </button>
+                    <div class="mobile-menu main-header-navigation__mobile-menu">
+                        <ul class="site-navigation">
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Home</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Consulting Service</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Industries Seryed</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Our Proces</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Clicent & Results</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="link link_hover-active" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                <a class="btn btn_size_m main-header__btn" href="#webform">
+                    <div class="btn__text">Contact Us</div>
+                </a>
                 </nav>
             </header>
             <!-- Интро -->
             <main>
-                <section class="intro-wrapper page__intro background-color-black">
+                <section class="intro-wrapper page__intro black">
                     <div class="intro center">
                         <div class="intro__content tablet-aligning">
                             <div class="top-title intro__top-title">Supply Chain Consulting </div> 
                             <h1 class="title title_main-title intro__title">From strategy to delivery, on time every time</h1>
-                            <div class="page-text intro__page-text text-container-tablet">ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification,Consulting is an </div>
+                            <div class="page-text intro__page-text container-tablet">ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification,Consulting is an </div>
                             <a class="btn" href="#">About Us</a>
                         </div>
                             <img src="img/ABC-company.jpg" class="intro__img border-radius" alt="ABC company">
@@ -49,77 +69,51 @@
                 <section class="services page__services">
                     <div class="services__content tablet-aligning center">
                         <h2 class="title title_title_size_l services__title">ABC supply chain diversification & acceleration</h2>
-                        <div class="page-text services__page-text text-container-tablet mobile-aligning">
+                        <div class="page-text services__page-text container-tablet mobile-aligning">
                             <p>ABC Consulting is an operational consulting firm focused on global supply chain implementation and diversification, </p>
                         </div>
                     </div>
-
-                    <div class="services-swiper center swiper swiper-wrapper" style="padding-left: 3.35em; padding-right: 2.9em;">
-                        <div class="services-list services-swiper__services-list swiper-wrapper">
-                            <div class="services-card swiper-slide">
-                                <h3 class="services-card__title title">Marketing <br>Sales &</h3> 
-                                    <img src="img/marketing.jpg" class="services-card__img" alt="Marketing and Sales">
-                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                            </div>
-
-                            <div class="services-card swiper-slide">
-                                <h3 class="services-card__title title">Skill-Based<br>Training</h3> 
-                                <img src="img/trained.jpg" class="services-card__img" alt="Skill-Based Training">
-                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                            </div>
-
-                            <div class="services-card swiper-slide">
-                                <h3 class="services-card__title title">Infrastructure<br>Sourcing IT</h3> 
-                                <img src="img/infrastructure.jpg" class="services-card__img" alt="Infrastructure Sourcing IT">
-                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                            </div>
-
-                            <div class="services-card swiper-slide" style="margin-right: 0;">
-                                <h3 class="services-card__title title">Communication &<br>Media Services</h3> 
-                                <img src="img/communication.jpg" class="services-card__img" alt="Communication & Media Services">
-                                <a class="btn-arrow services-card__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination">
-                        </div>
+                    <div class="services-swiper swiper" style="padding-left: 3.35em; padding-right: 2.9em;">
+                        <ul class="services-list swiper-wrapper services__services-list" style="width: inherit;">
+                            <li class="services-list__item swiper-slide">
+                                <h3 class="services-list__title title">Marketing <br>Sales &</h3>
+                                <div class="services-list__img-wrapper">
+                                    <img src="img/marketing.jpg" class="services-list__img" alt="Marketing and Sales">
+                                </div>
+                                <a class="btn-arrow services-list__btn-arrow" href="#">
+                                    <img src="img/arrow.svg" class="btn-arrow__img" alt="arrow">
+                                </a>
+                            </li>
+                            <li class="services-list__item swiper-slide">
+                                <h3 class="services-list__title title">Skill-Based<br>Training</h3>
+                                <div class="services-list__img-wrapper">
+                                    <img src="img/trained.jpg" class="services-list__img" alt="Skill-Based Training">
+                                </div>
+                                <a class="btn-arrow services-list__btn-arrow" href="#">
+                                    <img src="img/arrow.svg" class="btn-arrow__img" alt="arrow">
+                                </a>
+                            </li>
+                            <li class="services-list__item swiper-slide">
+                                <h3 class="services-list__title title">Infrastructure<br>Sourcing IT</h3>
+                                <div class="services-list__img-wrapper">
+                                    <img src="img/infrastructure.jpg" class="services-list__img" alt="Infrastructure Sourcing IT">
+                                </div>
+                                <a class="btn-arrow services-list__btn-arrow" href="#">
+                                    <img src="img/arrow.svg" class="btn-arrow__img" alt="arrow">
+                                </a>
+                            </li>
+                            <li class="services-list__item swiper-slide">
+                                <h3 class="services-list__title title">Communication &<br>Media Services</h3>
+                                <div class="services-list__img-wrapper">
+                                    <img src="img/communication.jpg" class="services-list__img" alt="Communication & Media Services">
+                                </div>
+                                <a class="btn-arrow services-list__btn-arrow" href="#">
+                                    <img src="img/arrow.svg" class="btn-arrow__img" alt="arrow">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
-
-                    <!-- <ul class="services-list services__services-list center">
-                        <li class="services-list__item">
-                            <h3 class="services-list__title title">Marketing <br>Sales &</h3> 
-                            <div class="services-list__wrapper">
-                                <img src="img/marketing.jpg" class="services-list__img" alt="Marketing and Sales">
-                            </div>
-                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                        </li>
-                        <li class="services-list__item">
-                            <h3 class="services-list__title title">Skill-Based<br>Training</h3>
-                            <div class="services-list__wrapper">
-                                <img src="img/trained.jpg" class="services-list__img" alt="Skill-Based Training">
-                            </div>
-                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                        </li>
-                        <li class="services-list__item">
-                            <h3 class="services-list__title title">Infrastructure<br>Sourcing IT</h3>
-                            <div class="services-list__wrapper">
-                                <img src="img/infrastructure.jpg" class="services-list__img" alt="Infrastructure Sourcing IT">
-                            </div>
-                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                        </li>
-                        <li class="services-list__item">
-                            <h3 class="services-list__title title">Communication &<br>Media Services</h3>
-                            <div class="services-list__wrapper">
-                                <img src="img/communication.jpg" class="services-list__img" alt="Communication & Media Services">
-                            </div>
-                            <a class="btn-arrow services-list__btn-arrow" href="#"><img src="img/arrow.svg" class="btn-arrow-img" alt="arrow"></a>
-                        </li>
-                    </ul>
-                    <div class="slider">
-                        <span class="slider__pagination slider__pagination_active"></span>
-                        <span class="slider__pagination"></span>
-                        <span class="slider__pagination"></span>
-                        <span class="slider__pagination"></span>
-                    </div>-->
                 </section>
             <!-- Статьи -->
                     <article class="blog-post page__blog-post center flex-tablet">
@@ -141,7 +135,7 @@
                                 <li>Manufacturing location (greenfield, brownfield, jv, maquiladora, vertical integration, etc.)</li>
                             </ol>
                             </div>
-                            <a href="src" class="btn">Reading</a>
+                            <a href="#" class="btn">Reading</a>
                         </div>
                     </article>
                     <article class="blog-post page__blog-post blog-post_row-reverse blog-post_gap center flex-tablet">
@@ -156,11 +150,11 @@
                                 <div class="page-text blog-post__page-text text-container-tablet mobile-aligning">
                                     <p>Many Global OEM and multinational consumer product corporations are embarking on a journey of transformation relative to establishing rooftops and manufacturing</p>
                                 </div>
-                                <a href="src" class="btn">Reading</a>
+                                <a href="#" class="btn">Reading</a>
                             </div>
                     </article>
             <!-- Преимущества -->
-                <section class="advantages-wrapper page__advantages background-color-grey">
+                <section class="advantages-wrapper page__advantages grey">
                     <div class="advantages center">
                         <div class="advantages__content tablet-aligning">
                             <div class="top-title advantages__top-title">At our core</div>
@@ -212,39 +206,37 @@
             <!-- Кейсы -->
                 <section class="cases page__cases center">
                     <h2 class="title title_title_size_l cases__title tablet-aligning">Inside ABC supply chain consulting </h2>
-                    <ul class="cases-list cases__cases-list">
-                        <li class="cases-list__item">
-                                <img class="cases-list__img" src="img/Founder.jpg" alt="Founder ABC">
-                                <a href="#">
-                                    <h3 class="cases-list__title title">Founder Christopher Discusses The  ABC Approach</h3>
-                                </a>
-                                <div class="cases-list__descr">
-                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
-                                </div>
-                        </li>
-                        <li class="cases-list__item">
-                                <img class="cases-list__img" src="img/education.jpg" alt="The link for sustainable succes">
-                                <a href="#">
-                                    <h3 class="cases-list__title title">The link for sustainable succes & results withhin supply chan</h3>
-                                </a>
-                                <div class="cases-list__descr">
-                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
-                                </div>
-                        </li>
-                        <li class="cases-list__item">
-                                <img class="cases-list__img" src="img/working.jpg" alt="Brainshtorm">
-                                <a href="#">
-                                    <h3 class="cases-list__title title">How to Overcome Trade War, Covid-19, And Supply Risk?</h3>
-                                </a>
-                                <div class="cases-list__descr">
-                                    <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
-                                </div>
-                        </li>
-                    </ul>
-                    <div class="slider">
-                        <span class="slider__pagination slider__pagination_active"></span>
-                        <span class="slider__pagination"></span>
-                        <span class="slider__pagination"></span>
+                    <div class="cases-swiper swiper">
+                        <ul class="cases-list swiper-wrapper cases__cases-list">
+                            <li class="cases-list__item swiper-slide">
+                                    <img class="cases-list__img" src="img/Founder.jpg" alt="Founder ABC">
+                                    <a href="#">
+                                        <h3 class="cases-list__title title">Founder Christopher Discusses The  ABC Approach</h3>
+                                    </a>
+                                    <div class="cases-list__descr">
+                                        <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                    </div>
+                            </li>
+                            <li class="cases-list__item swiper-slide">
+                                    <img class="cases-list__img" src="img/education.jpg" alt="The link for sustainable succes">
+                                    <a href="#">
+                                        <h3 class="cases-list__title title">The link for sustainable succes & results withhin supply chan</h3>
+                                    </a>
+                                    <div class="cases-list__descr">
+                                        <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                    </div>
+                            </li>
+                            <li class="cases-list__item swiper-slide">
+                                    <img class="cases-list__img" src="img/working.jpg" alt="Brainshtorm">
+                                    <a href="#">
+                                        <h3 class="cases-list__title title">How to Overcome Trade War, Covid-19, And Supply Risk?</h3>
+                                    </a>
+                                    <div class="cases-list__descr">
+                                        <p>According to recent figures, Bangladesh currently has a literacy According toIs the recent figures, Bangladesh</p>
+                                    </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </section>
             <!-- call to action -->
@@ -256,78 +248,122 @@
                             <p>Take the next step by learning more about Gibson Consulting’s capabilities and qualifications. To request information or arrange face-to-face introduction,</p>
                             <p>Simply fill out the form below or give us a call at 312.291.4640.Take the next step by learning more.</p>
                         </div>
-                        <a href="src" class="btn">Leran More</a>
+                        <a href="#" class="btn">Leran More</a>
                     </div>
                     <form class="webform cta__webform" action="#">
-                        <fieldset class="webform__container">
+                        <fieldset class="webform__container" id="webform">
                             <input class="webform__field" type="text" id="name" name="name" placeholder="Full Name">
                             <input class="webform__field" type="text" id="mail" name="mail" placeholder="Email">
                             <input class="webform__field" type="text" id="phone" name="phone" placeholder="Phone Number">
                             <input class="webform__field webform__field_margin-bottom" type="text" id="subjet" name="subjet" placeholder="Subjet">
-                            <textarea class="webform__field webform__field_textarea" name="message" placeholder="Message"></textarea>
+                            <textarea class="webform__field webform__field_textarea" id="message" name="message" placeholder="Message"></textarea>
                             <button class="btn webform__btn btn_size_s" type="submit">
                                 Submit
                             </button>
                             <div class="webform__text webform-text">
                                 <div class="webform-text__recaptcha">protected by reCAPTCHA</div>
-                                <div class="webform-text__privacy"><a class="webform-text__link" href="#">Privacy</a> - <a class="webform-text__link" href="#">Terms</a></div>
+                                <div class="webform-text__privacy">
+                                    <a class="webform-text__link" href="#">Privacy</a> - <a class="webform-text__link" href="#">Terms</a>
+                                </div>
                             </div>
                         </fieldset>
                     </form>
                 </section>
             </main>
         <!-- Футер -->
-            <footer class="footer-wrapper page__footer-wrapper background-color-black">
-                <div class="footer-nav footer-wrapper__footer-nav center">
+            <footer class="footer page__footer black">
+                <div class="footer-nav footer__footer-nav center">
                     <div class="main-footer footer-nav__main-footer">
                         <div class="main-footer__content">
                             <a class="logo main-footer__logo" href="#">
                                 <img src="img/logo.svg" class="logo__img logo__img_size_s" alt="logo">
-                                <p class="logo__company-name logo__company-name_size_s">ABC</p>
                             </a>
                             <p class="main-footer__text">
                                 According to recent figures, Bangladesh currently According to recent figures, Bangladesh currently
                             </p>
                             <ul class="social-list">
-                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-facebook" src="img/fb.svg" alt="facebook"></a></li>
-                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-twitter" src="img/tw.svg" alt="twitter"></a></li>
-                                <li class="social-list__item"><a class="social-list-link" href="#"><img class="social-list__icon social-list__icon-instagram" src="img/inst.svg" alt="instagram"></a></li>
+                                <li class="social-list__item">
+                                    <a class="social-list-link" href="#">
+                                        <img class="social-list__icon social-list__icon-facebook" src="img/fb.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list-link" href="#">
+                                        <img class="social-list__icon social-list__icon-twitter" src="img/tw.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list-link" href="#">
+                                        <img class="social-list__icon social-list__icon-instagram" src="img/inst.svg" alt="instagram">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <ul class="menu main-footer__menu">
                             <li class="menu__item">
                                 <div class="menu__item-wrapper">
                                     <h2 class="menu__title">About Us</h2>
-                                    <button class="menu-btn"><span class="menu-btn__element"></span><span class="menu-btn__element"></span></button>
+                                    <button class="menu-btn">
+                                        <span class="menu-btn__element"></span>
+                                        <span class="menu-btn__element"></span>
+                                    </button>
                                 </div>
                                 <ul class="menu-links">
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Advanced Analytics</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Data Insights</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Data Exploration</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Auto Track</a></li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Advanced Analytics</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Data Insights</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Data Exploration</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Auto Track</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="menu__item">
                                 <div class="menu__item-wrapper">
                                     <h2 class="menu__title">Services</h2>
-                                    <button class="menu-btn"><span class="menu-btn__element"></span><span class="menu-btn__element"></span></button>
+                                    <button class="menu-btn">
+                                        <span class="menu-btn__element"></span>
+                                        <span class="menu-btn__element"></span>
+                                    </button>
                                 </div>
                                 <ul class="menu-links">
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Article & Blog</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Documentation</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Learn Gulaly</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Tutorials</a></li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Article & Blog</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Documentation</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Learn Gulaly</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Tutorials</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="menu__item">
                                 <div class="menu__item-wrapper">
                                     <h2 class="menu__title">Industries Seerved</h2>
-                                    <button class="menu-btn"><span class="menu-btn__element"></span><span class="menu-btn__element"></span></button>
+                                    <button class="menu-btn">
+                                        <span class="menu-btn__element"></span>
+                                        <span class="menu-btn__element"></span>
+                                    </button>
                                 </div>
                                 <ul class="menu-links">
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Onlin batch</a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Offline batch </a></li>
-                                    <li class="menu-links__item"><a class="menu-links__link" href="#">Private</a></li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Onlin batch</a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Offline batch </a>
+                                    </li>
+                                    <li class="menu-links__item">
+                                        <a class="menu-links__link" href="#">Private</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -347,7 +383,8 @@
         <script src="js/burger-menu.js"></script>
         <script src="js/menu-list.js"></script>
         <script src="js/send-form.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
-        <script src="js/slider.js"></script>
+        <script src="js/cases-slider.js"></script>
+        <script src="js/servises-slider.js"></script>
+        <script src="js/localstorage.js"></script>
     </body>
 </html>
